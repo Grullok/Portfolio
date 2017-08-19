@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Restaurant </title>
+      <script src="https://use.fontawesome.com/7d66257d29.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script type='text/javascript' src="gallery.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Play|Raleway" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel = "stylesheet" type = "text/css" href = "gallery.css" />
+</head>
+<body>
+
+<div id="about">
+<h1 id="hello"> Hello! </h1>
+    <h1> My name is Robert</h1>
+    <h2 class="pull-left">I have been working as a freelance designer, specifically in designing interfaces and vector graphics for use on the internet.</h2>
+</div>
+    <div id="skills">
+      
+    <h1 id="skillset" class="text-center"> About </h1>
+           <div class="row">
+                   <h2 class="pull-left"> I am a 23 year old freelance designer from Tallinn, Estonia who mainly specializes in designing different aspects of the world wide web. </h2>
+                    <img src="all6.png" class="col-md-4" id="icons">          
+        </div>
+    </div>
+    <div id="Rimi">  
+        <div class="row">
+        <h1 id="examples" class="text-center"> Web design </h1>
+        </div>
+        <div class="row">
+            <h3 class="col-md-4 h3pad"> Rimi is an Estonian store with a mobile website that I found to be somewhat difficult to use and generally not very accessible.
+            <br>
+            The buttons were small and oddly placed and there was a lot of unused screen space, whilst the rest of the design was tightly packed.</h3>
+        <iframe width="438" height="930" src="https://invis.io/GKD3WZE8Z" frameborder="0" allowfullscreen class="col-md-4"></iframe>
+            <h3 class="col-md-4 h3pad"> I designed a more accessible and aesthetically pleasing version of it using Adobe Photoshop, Illustrator and InVision.
+            <br>
+           Keeping to their general design aspects, I used the space more efficiently and made navigating the website simpler.
+            </h3>
+        </div>
+        </div>
+    <div id="olea">
+        <div style="padding-top: 150px;">
+        <div class="row">
+            <h3 id="oleaText" class="col-md-4"> I also designed the website and logo for a fictional restaurant using Adobe Photoshop, Illustrator and InVision. 
+                <br>
+                <br>
+                I aimed to give it a very fluid and flowing interface, trying to keep things simple and dynamic.
+            </h3>
+        <iframe src=" https://invis.io/KQD3AHBVG" width="1080" height="480" frameborder="0" id="oleaweb" class="text-center col-md-8"></iframe>
+           
+        
+    </div>
+            </div>
+    </div>
+    
+    <div id="logos">
+        <div class="row">
+        <h1 id="logosT"  class="text-center"> Logos </h1>    
+        </div>
+       <h3> I also put those skills to use in creating logos, icons, illustrations and other vector art.</h3>
+ 
+
+<div class="row container-fluid">
+  
+  
+    <div class="column">
+    <img src="logos/res/logo1.png" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="logos/res/logo2.png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="logos/res/logo3.png" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="logos/res/logo4.png" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+</div>
+       
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+ 
+   
+      
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="logos/res/logo1.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="logos/res/logo2.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="logos/res/logo3.png" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="logos/res/logo4.png" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="logos/res/logo1.png" style="width:100%" onclick="currentSlide(1)" alt="Logo I designed for a freelance project.">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="logos/res/logo2.png" style="width:100%" onclick="currentSlide(2)" alt="A redesign for a logo of an Estonian journalism website.">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="logos/res/logo3.png" style="width:100%" onclick="currentSlide(3)" alt="A logo for a fictional restaurant.">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="logos/res/logo4.png" style="width:100%" onclick="currentSlide(4)" alt="Logo for a small web application I wrote in Javascript.">
+    </div>
+  </div>
+        </div>
+   </div>
+        <div id="webApp">
+    <h1 id="frontE" class="text-center"> Front-end</h1>
+            <div class="row">
+            <h3 class="col-md-4"> I also dabble in front-end design, using tools such as HTML, CSS, Javascript, JQuery and Bootstrap to make simple yet visually appealing websites.
+                <br>
+                <br>
+                For example, this is a simple Javascript based web application using Ajax to get information from the Wikipedia API.
+                </h3>
+            <div id="wikiV">
+           <iframe height='550' scrolling='no' title='Wikiviewer ajax' src='https://codepen.io/Grullok/embed/preview/RgWBra/?height=265&theme-id=0&default-tab=result&embed-version=2' frameborder='no'  width="750" align="center"  class="col-md-8"></iframe>
+            </div>
+    </div>    
+    </div>
+    <div id='contact' class="text-center">
+        <h1 style="padding-bottom:75px; padding-top: 50px;"> Contact me </h1>
+    <h2 class="text-center" id="contactH2"> Don't hesitate to contact me, I will happily answer any questions You may have.</h2>
+        <br>
+        <h2 class="text-center dblock"> Email: Robert.Ginter@Outlook.com <br></h2>
+        <h2 class="text-center dblock"> Phone number: +372-5284550 </h2>
+    </div>
+</body>
+</html>
