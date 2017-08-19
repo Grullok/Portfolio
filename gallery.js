@@ -34,3 +34,8 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
+$(document).bind('keyup', function(e){
+    if(e.which==27) {
+    closeModal()
+    }
+});
