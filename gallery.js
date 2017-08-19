@@ -6,6 +6,14 @@ function closeModal() {
   document.getElementById('myModal').style.display = "none";
 }
 
+$(document).ready(function() {
+    $(document).bind('keyup', function(e){
+    if(e.which==27) {
+    closeModal();
+    };
+    });
+});
+
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -34,8 +42,3 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
-$(document).bind('keyup', function(e){
-    if(e.which==27) {
-    closeModal()
-    }
-});
