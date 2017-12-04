@@ -25,8 +25,10 @@
 
 <div id="about">
 <h1 id="hello"> Hello! </h1>
-    <h1> My name is Robert</h1>
-    <h2 class="pull-left">I am a freelance designer, specifically in the field of user interfaces and vector graphics for use on the internet.</h2>
+   <h1 class="pull-left" id="hello">Hello, my name is Robert and I'm a</h1>
+                        <h1 class="pull-left" id="UXDes">designer with a passion for</h1>
+                        <h1 id="animationText" class="pull-left">UX DESIGN</h1>
+                        <div id="changeText"></div>
 </div>
     <div id="skills">
       
@@ -161,5 +163,19 @@
         <a href="mailto:robert.ginter@outlook.com"><h2 class="text-center dblock"> Email: Robert.Ginter@Outlook.com <br></h2></a>
         <a href="tel:+372-5284550"> <h2 class="text-center dblock"> Phone number: +372-5284550 </h2></a>
     </div>
+  <script>
+        var text = ["UX DESIGN", "UI DESIGN", "GRAPHIC DESIGN", "FRONT-END DEVELOPMENT", "ACCESSIBILTY"];
+        var i = 0;
+        var elem = document.getElementById("animationText");
+        setInterval(change, 2500);
+
+        function change() {
+            elem.innerHTML = text[i];
+            i++;
+            if (i >= text.length) {
+                i = 0;
+            }
+        };
+    </script>
 </body>
 </html>
